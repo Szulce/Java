@@ -97,7 +97,7 @@ public class TypeTest {
         //po kolei odczytuje obiekty
         ObjectMapper objectMapper = new ObjectMapper();
         Type[] asArray = objectMapper.readValue(ccc, Type[].class);
-
+       // List<Type> asList = objectMapper.readerFor(Type.class).readValue(ccc);
         assertThat(asArray[3].getName()).isEqualTo("testDirectory");
         assertThat(asArray[3].getType()).isEqualTo("inode/directory");
 

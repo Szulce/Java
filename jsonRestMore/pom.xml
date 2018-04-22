@@ -4,15 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>PremieJPA</groupId>
-    <artifactId>p</artifactId>
+    <groupId>jsonRestMore</groupId>
+    <artifactId>jsonRestMore</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
     <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.2</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -29,18 +35,25 @@
         </dependency>
 
         <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
-        <version>1.4.197</version>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.9.1</version>
         </dependency>
 
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.2.12.Final</version>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>9.4.9.v20180320</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>9.4.9.v20180320</version>
         </dependency>
 
     </dependencies>
+
 
 
 
